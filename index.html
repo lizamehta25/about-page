@@ -4,6 +4,15 @@
   <meta charset="UTF-8">
   <title>About</title>
   <style>
+    
+    .footer-image {
+  width: 100vw; /* Makes the image span the entire width of the viewport */
+  height: auto; /* Maintains the aspect ratio */
+  display: block; /* Removes any extra space caused by inline images */
+  margin: 0; /* Removes default margins */
+  padding: 0; /* Removes any padding */
+}
+    
     @font-face { 
       font-family: "scrubby"; 
       src: url("scrubby.otf") format("opentype"); 
@@ -83,6 +92,48 @@
       text-align: left; 
       margin-bottom: 15px;
     }
+    
+      .h3pink {
+      font-family: "sfpro-med";
+      color: #FE90CC;
+      font-size: 20px;
+      text-align: left; 
+ 
+    }
+    
+          .h3grey {
+      font-family: "sfpro-med";
+      color: grey;
+      font-size: 25px;
+      text-align: left;
+      margin-top: -10px;
+      margin-bottom: 15px;
+    }
+    
+.values-section {
+  display: flex; /* Arrange the header and paragraph side by side */
+  align-items: center; /* Vertically align items */
+  gap: 200px; /* Add a 20px gap between the headers and paragraph */
+  margin-top: 20px; /* Optional: Add spacing from other sections */
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 150px; /* Set a fixed width for consistent alignment */
+}
+
+.pvalues {
+
+  margin: 0; /* Remove default margin */
+  margin-top: 30px;
+  flex: 1; /* Allow the paragraph to take remaining space */
+  font-family: "sfpro";
+  color: black;
+  font-size: 16px;
+  line-height: 1.5;
+}
 
     .h4 {
       font-family: "sfpro";
@@ -197,6 +248,46 @@
 <img src="girls.JPG" alt="description of image" class="images">
 
 <img src="Camera.png" alt="description of image" class="images2">
+    
+<h4 class="h4"> My Values</h4>
+
+<div class="values-section">
+  <div class="header-content">
+    <h3 class="h3pink">01</h3>
+    <h3 class="h3grey">Community</h3>
   </div>
+  <p class="pvalues">
+    I am fuelled from the passion and creativity of those around me. Waterloo is the most vibrant space of makers.
+  </p>
+    </div>
+    
+    
+    <div class="values-section">
+  <div class="header-content">
+    <h3 class="h3pink">02</h3>
+    <h3 class="h3grey">Tailored</h3>
+  </div>
+  <p class="pvalues">
+I pride myself in making authentic work - I don’t use design templates as a source of inspiration which keeps each of my projects entirely unique. 
+  </p>
+    </div>
+    
+  <div class="values-section">
+  <div class="header-content">
+    <h3 class="h3pink">02</h3>
+    <h3 class="h3grey">Functionality</h3>
+  </div>
+  <p class="pvalues">
+I prioritize functionality and usability in my designs, ensuring that aesthetics enhance the user experience while crafting intuitive solutions that blend form and function.
+  </p>
+    </div>
+    
+  
+  
+  
+
+  
+</div>
+  <img src="Footer.png" alt="description of image" class="footer-image">
 </body>
 </html>
