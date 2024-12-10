@@ -57,10 +57,14 @@
       background-color: lightpink;
     }
 
-    .container {
-      margin: 10px; /* Added margin for the entire document */
+    body {
+      margin: 10px;
       padding: 0 20px;
+    }
+
+    .container {
       max-width: 1200px;
+      margin: auto;
     }
 
     .h1 { 
@@ -111,29 +115,50 @@
     .image-content img {
       width: 100%; /* Make the image responsive */
       height: auto;
+      margin: 20px;
     }
+    
+   .cafe-content {
+      display: flex; /* Use flexbox */
+      align-items: top; /* Align text and image vertically to the center */
+}
 
-    .cafe-content {
-      display: flex;
-      align-items: center; /* Center content vertically */
-      justify-content: center; /* Center content horizontally */
-      gap: 5px; /*1Reduced spacing between the image and text */
-      margin-top: 20px; /* Add some spacing from the previous content */
-    }
+.cafe-image {
+  flex: 1; /* Adjust space allocation for the image */
+}
 
-    .cafe-image {
-      flex: 1; /* Adjust space allocation for the image */
-    }
+.cafe-image img {
+  width: 400px; /* Reduced width of the image */
+  height: auto;
+}
 
-    .cafe-image img {
-      width: 50%; /* Reduced width of the image */
-      height: auto;
-    }
+.cafe-text {
+  flex: 1; /* Adjust space allocation for the text */
+  text-align: center; /* Center the text horizontally */
+  margin-top: 0; /* Ensure no additional top margin */
+}
 
-    .cafe-text {
-      flex: 1; /* Adjust space allocation for the text */
-      text-align: center; /* Center the text horizontally */
+    .images { 
+      position: relative; 
+      left: 200px; 
+      top: -200px; 
+      width: 50%; 
+      height: auto; 
+      rotate: -5deg; 
     }
+    
+        .images2 { 
+      position: relative; 
+      left: 150px; 
+      top: -200px; 
+      width: 40%; 
+      height: auto; 
+      rotate: 5deg; 
+    }
+    
+    
+    
+    
   </style>
 </head>
 <body>
@@ -143,32 +168,35 @@
       <li><a href="#about">ABOUT</a></li>
       <li><a href="#play">PLAY</a></li>
     </ul>   
-  </div>
 
-  <img src="plant1.webp" alt="description of image" style="width:30%;height:auto;"> 
-  <img src="welcome.png" alt="description of image" style="width:30%;height:auto;"> 
-  
-  <h1 class="h1"> Cozy Corner</h1>
-  
-  <div class="content">
-    <div class="text-content">
-      <h4 class="h4">9 TO 5</h4>
-      <p class="p"> By day, I’m a Global Business and Digital Arts student at the University of Waterloo. I find joy in storytelling through my work and approach every decision with creativity. I’m a multidisciplinary designer who likes to dabble in UX, branding, and film. I’m drawn to projects that push me outside of my comfort zone. </p>
-      <p class="p">I thrive on connecting with new people and believe that collaboration is the key to growth and creativity. I don’t want to be the smartest person in the room; instead, I seek out driven, determined individuals who inspire and challenge me. Building communities is a passion of mine—whether it’s organizing designathons to unite creative minds or leading conferences to inspire and empower others. For me, it’s about creating spaces where ideas flourish, people learn from one another, and can leave with new friends. </p>
-    </div>
-    <div class="image-content">
-      <img src="Screenshot 2024-12-10 at 4.45.17 PM.png" alt="description of image">
-    </div>
-  </div>
+    <img src="plant1.webp" alt="description of image" style="width:30%;height:auto;"> 
+    <img src="welcome.png" alt="description of image" style="width:30%;height:auto;"> 
 
-  <div class="cafe-content">
-    <div class="cafe-image">
-      <img src="cafe.JPG" alt="description of image">
+    <h1 class="h1">Cozy Corner</h1>
+
+    <div class="content">
+      <div class="text-content">
+        <h4 class="h4">9 TO 5</h4>
+        <p class="p">By day, I’m a Global Business and Digital Arts student at the University of Waterloo. I find joy in storytelling through my work and approach every decision with creativity. I’m a multidisciplinary designer who likes to dabble in UX, branding, and film. I’m drawn to projects that push me outside of my comfort zone.</p>
+        <p class="p">I thrive on connecting with new people and believe that collaboration is the key to growth and creativity. I don’t want to be the smartest person in the room; instead, I seek out driven, determined individuals who inspire and challenge me. Building communities is a passion of mine—whether it’s organizing designathons to unite creative minds or leading conferences to inspire and empower others. For me, it’s about creating spaces where ideas flourish, people learn from one another, and can leave with new friends.</p>
+      </div>
+      <div class="image-content">
+        <img src="Screenshot 2024-12-10 at 4.45.17 PM.png" alt="description of image">
+      </div>
     </div>
-    <div class="cafe-text">
-      <h4 class="h4">5 TO 9</h4>
-      <p class="p">By night, you’ll find me cafe hopping in Toronto and small towns. I’m always in search of the perfect matcha latte and hidden gems to add to my list. I enjoy meeting and helping build the community around me - this summer I met some amazing women in tech with Toronto’s Charmed events. I love vlogging my adventures and uploading to my Youtube channel whenever I can! If I’m not exploring the world, I’m exploring with different design tools and most likely downloading more fonts!</p>
+
+    <div class="cafe-content">
+      <div class="cafe-image">
+        <img src="cafe.JPG" alt="description of image">
+      </div>
+      <div class="cafe-text">
+        <h4 class="h4">5 TO 9</h4>
+        <p class="p">By night, you’ll find me cafe hopping in Toronto and small towns. I’m always in search of the perfect matcha latte and hidden gems to add to my list. I enjoy meeting and helping build the community around me - this summer I met some amazing women in tech with Toronto’s Charmed events. I love vlogging my adventures and uploading to my Youtube channel whenever I can! If I’m not exploring the world, I’m exploring with different design tools and most likely downloading more fonts!</p>
+      </div>
     </div>
+<img src="girls.JPG" alt="description of image" class="images">
+
+<img src="Camera.png" alt="description of image" class="images2">
   </div>
 </body>
 </html>
