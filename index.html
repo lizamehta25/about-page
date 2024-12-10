@@ -31,6 +31,10 @@
       font-family: "sfpro-med";
     }
 
+    body {
+      margin: 10px; /* Margin for the entire document */
+    }
+
     ul {
       font-family: "sfpro"; 
       list-style-type: none;
@@ -41,11 +45,6 @@
       justify-content: center;
     }
     
-    .ul2 {
-      list-style-type: disc;
-      margin-left: 20px;
-    }
-
     li {
       display: inline-block;
     }
@@ -73,19 +72,7 @@
       color: #194200; 
       font-size: 90px;
       position: relative; 
-      top: -80px; 
-      left: 430px; 
-    }
-
-    .h3, .h4 {
-      position: relative; 
-      top: -80px; 
-      margin-right: 10px; 
-      margin-left: 10px; 
-      text-align: left; 
-      font-family: "sfpro-med";
-      color: black;
-      font-size: 20px;
+      text-align: center;
     }
 
     .h4 {
@@ -93,13 +80,12 @@
       color: grey;
       font-size: 18px;
       margin-bottom: 15px;
+      text-align: left;
     }
     
     .p {
       font-family: "sfpro";
       color: black;
-      position: relative; 
-      top: -80px;
       font-size: 16px;
       line-height: 1.5;
       margin-right: 10px; 
@@ -110,7 +96,7 @@
     .content {
       display: flex; /* Use flexbox */
       gap: 20px; /* Add space between items */
-      align-items: flex-start; /* Align items at the top */
+      align-items: center; /* Align text and image vertically to the center */
     }
 
     .text-content {
@@ -118,7 +104,7 @@
     }
 
     .image-content {
-      flex: 1; /* Allow the image to take up less space */
+      flex: 2; /* Allow the image to take up less space */
     }
 
     .image-content img {
@@ -136,17 +122,12 @@
     </ul>   
   </div>
   
-  <img src="plant1.webp" alt="description of image" style="width:30%;height:auto;"> 
-  <img src="welcome.png" alt="description of image" style="width:30%;height:auto;"> 
-  
-  <h1 class="h1"> Cozy Corner</h1>
+  <h1 class="h1">Cozy Corner</h1>
   
   <div class="content">
     <div class="text-content">
-      <h4 class="h4"> 9 TO 5</h4>
-      <p class="p"> By day, I’m a Global Business and Digital Arts student at the University of Waterloo. I find joy in storytelling through my work and approach every decision with creativity. I’m a multidisciplinary designer who likes to dabble in UX, branding, and film. I’m drawn to projects that push me outside of my comfort zone. 
-      </p>
-      
+      <h4 class="h4">9 TO 5</h4>
+      <p class="p"> By day, I’m a Global Business and Digital Arts student at the University of Waterloo. I find joy in storytelling through my work and approach every decision with creativity. I’m a multidisciplinary designer who likes to dabble in UX, branding, and film. I’m drawn to projects that push me outside of my comfort zone. </p>
       <p class="p">I thrive on connecting with new people and believe that collaboration is the key to growth and creativity. I don’t want to be the smartest person in the room; instead, I seek out driven, determined individuals who inspire and challenge me. Building communities is a passion of mine—whether it’s organizing designathons to unite creative minds or leading conferences to inspire and empower others. For me, it’s about creating spaces where ideas flourish, people learn from one another, and can leave with new friends. </p>
     </div>
     <div class="image-content">
