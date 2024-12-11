@@ -5,13 +5,53 @@
   <title>About</title>
   <style>
     
-    .footer-image {
+.footer-links {
+  display: flex; /* Arrange items horizontally */
+  justify-content: left; /* Center the items */
+  gap: 20px; /* Add space between the items */
+  position: absolute; /* Position the links above the footer image */
+  top: 2480px; /* Position them slightly above the footer image */
+  left: 50px; 
+  width: 100%; /* Ensure the footer links span thefull width */
+  z-index: 10; /* Make sure the links appear above the footer image */
+}
+
+.footer-image {
   width: 100vw; /* Makes the image span the entire width of the viewport */
   height: auto; /* Maintains the aspect ratio */
   display: block; /* Removes any extra space caused by inline images */
   margin: 0; /* Removes default margins */
+  margin-top: 30px; 
   padding: 0; /* Removes any padding */
 }
+    
+/* unvisited link */
+a:link {
+      font-family: "sfpro";
+      color: grey;
+      font-size: 18px
+}
+
+/* visited link */
+a:visited {
+      font-family: "sfpro";
+      color: #FE90CC;
+      font-size: 18px
+}
+
+/* mouse over link */
+a:hover {
+      font-family: "sfpro";
+      color: hotpink;
+      font-size: 18px
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+
     
     @font-face { 
       font-family: "scrubby"; 
@@ -282,12 +322,18 @@ I prioritize functionality and usability in my designs, ensuring that aesthetics
   </p>
     </div>
     
-  
-  
-  
+    <img src="Footer.png" alt="description of image" class="footer-image">
+<div class="footer-links">
+  <h4 class="h4"><a href="https://x.com/leezaofc" target="_blank">TWITTER</a></h4>
+    
+  <h4 class="h4"><a href="https://www.linkedin.com/in/liza-mehta-45bb851b6/">LINKEDIN</a></h4>
+  <h4 class="h4"><a href="https://drive.google.com/file/d/1nLPNY6S1G-0NWOJ6H0xOOF2L0bOOzVEj/view?usp=sharing">RESUME</a></h4>
+</div>
 
   
 </div>
-  <img src="Footer.png" alt="description of image" class="footer-image">
+
+  
+  
 </body>
 </html>
