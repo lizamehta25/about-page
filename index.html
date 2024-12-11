@@ -25,24 +25,47 @@
   padding: 0; /* Removes any padding */
 }
     
-/* unvisited link */
+    ul {
+      font-family: "sfpro"; 
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+    }
+    
+    li {
+      display: inline-block;
+    }
+
+    li a {
+      display: block;
+      color: grey;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    /* unvisited link */
 a:link {
       font-family: "sfpro";
       color: grey;
-      font-size: 18px
+      font-size: 18px; 
+      text-decoration: none;
 }
 
 /* visited link */
 a:visited {
       font-family: "sfpro";
-      color: #FE90CC;
+      color: GREY;
       font-size: 18px
 }
 
 /* mouse over link */
 a:hover {
       font-family: "sfpro";
-      color: hotpink;
+      color: #FE90CC;
       font-size: 18px
 }
 
@@ -80,31 +103,7 @@ a:active {
       font-family: "sfpro-med";
     }
 
-    ul {
-      font-family: "sfpro"; 
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-    }
-    
-    li {
-      display: inline-block;
-    }
 
-    li a {
-      display: block;
-      color: grey;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-
-    li a:hover {
-      background-color: lightpink;
-    }
 
     body {
       margin: 10px;
@@ -255,10 +254,10 @@ a:active {
 <body>
   <div class="container">
     <ul>
-      <li><a class="active" href="#home">HOME</a></li>
-      <li><a href="#about">ABOUT</a></li>
+      <li><a class="active" href="https://lizamehta25.github.io/portfolio/">HOME</a></li>
+      <li><a href="https://lizamehta25.github.io/about-page/">ABOUT</a></li>
       <li><a href="#play">PLAY</a></li>
-    </ul>   
+    </ul> 
 
     <img src="plant1.webp" alt="description of image" style="width:30%;height:auto;"> 
     <img src="welcome.png" alt="description of image" style="width:30%;height:auto;"> 
